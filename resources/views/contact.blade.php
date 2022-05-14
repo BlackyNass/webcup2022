@@ -24,31 +24,37 @@
             </div>
         </section>
         <section class="contact-form-wrapper">
-            <form action="index.html">
+            <form method="POST" action="{{route('contact_send')}}">
+                @csrf
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="name">YOUR NAME <sup>*</sup></label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name *">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name *" value="{{old('name')}}">
+                        {!! $errors->first('name', '<span class="highlight">Veuillez saisir un nom valide</span>') !!}
                     </div>
                     <div class="form-group col-md-6">
                         <label for="email">YOUR EMAIL ADDRESS <sup>*</sup></label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="feeney.matteo@schmeler.com">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="feeney.matteo@schmeler.com" value="{{old('email')}}">
+                        {!! $errors->first('email', '<span class="highlight">Veuillez saisir un email valide</span>') !!}
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="subject">SUBJECT <sup>*</sup></label>
-                        <input type="text" class="form-control" id="name" name="subject" placeholder="Development">
+                        <input type="text" class="form-control" id="name" name="subject" placeholder="Development" value="{{old('subject')}}">
+                        {!! $errors->first('subject', '<span class="highlight">Veuillez saisir un sujet valide</span>') !!}
                     </div>
                     <div class="form-group col-md-6">
                         <label for="phone">YOUR PHONE NUMBER <sup>*</sup></label>
-                        <input type="text" class="form-control" id="phone" name="phone" placeholder="635-396-9570">
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="0639999666" value="{{old('phone')}}">
+                        {!! $errors->first('phone', '<span class="highlight">Veuillez saisir un numéro valide</span>') !!}
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-12">
                         <label for="message">HOW CAN WE HELP YOU? <sup>*</sup></label>
-                        <textarea name="message" id="message" class="form-control" rows="7" placeholder="Hi there, I would like to ..."></textarea>
+                        <textarea name="message" id="message" class="form-control" rows="7" placeholder="Hi there, I would like to ...">{{old('message')}}</textarea>
+                        {!! $errors->first('message', '<span class="highlight">Veuillez saisir un message</span>') !!}
                     </div>
                 </div>
                 <div class="text-center">

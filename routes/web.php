@@ -20,9 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
+Route::post('/contact_send', [App\Http\Controllers\ContactController::class, 'send'])->name('contact_send');
 Route::get('/services', function () {
     return view('services');
 })->name('services');
