@@ -23,6 +23,15 @@ class DashboardCapsule extends Component
 
     }
 
+    public function send_facture_id($id){
+        $this->emit('update_facture_id', $id);
+    }
+
+    protected $listeners = ['update'];
+    public function update(){
+        $this->factures = Facture::retrieveByUtilisateurId(auth()->user()->id)->get()->toArray();
+    }
+
     public function mount()
     {
         $this->capsules = Capsule::retrieveByUtilisateurId(auth()->user()->id)->get()->toArray();
