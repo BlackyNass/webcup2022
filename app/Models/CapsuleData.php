@@ -50,7 +50,7 @@ class CapsuleData extends Model
      * @var array
      */
     protected $casts = [
-        'descriptif' => 'string', 'date_data' => 'date', 'created_at' => 'timestamp', 'updated_at' => 'timestamp'
+        'descriptif' => 'string', 'date_data' => 'date:Y-m-d', 'created_at' => 'timestamp', 'updated_at' => 'timestamp'
     ];
 
     /**
