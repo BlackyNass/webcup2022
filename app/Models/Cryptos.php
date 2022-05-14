@@ -5,18 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property float $total
- * @property int   $created_at
- * @property int   $updated_at
+ * @property string $code
+ * @property string $nom
+ * @property int    $created_at
+ * @property int    $updated_at
  */
-class Facture extends Model
+class Cryptos extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'facture';
+    protected $table = 'cryptos';
 
     /**
      * The primary key for the model.
@@ -31,7 +32,7 @@ class Facture extends Model
      * @var array
      */
     protected $fillable = [
-        'utilisateur_id', 'total', 'created_at', 'updated_at'
+        'code', 'nom', 'created_at', 'updated_at'
     ];
 
     /**
@@ -49,7 +50,7 @@ class Facture extends Model
      * @var array
      */
     protected $casts = [
-        'total' => 'double', 'created_at' => 'timestamp', 'updated_at' => 'timestamp'
+        'code' => 'string', 'nom' => 'string', 'created_at' => 'timestamp', 'updated_at' => 'timestamp'
     ];
 
     /**
@@ -69,9 +70,6 @@ class Facture extends Model
     public $timestamps = true;
 
     // Scopes...
-    public function scopeRetrieveByUtilisateurId($query, $utilisateur_id) {
-        return $query->where('utilisateur_id', '=', $utilisateur_id);
-    }
 
     // Functions ...
 
