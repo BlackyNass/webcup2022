@@ -44,19 +44,18 @@
                 <input class="form-control" type="text" wire:model="annee_exp">
                 @error('annee_exp') <span class="error">{{ $message }}</span> @enderror
             </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Cryptogramme</label>
+                <input class="form-control" type="text" wire:model="crypto">
+                @error('crypto') <span class="error">{{ $message }}</span> @enderror
+            </div>
             @elseif($mode_paiement == 2)
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Montant</label>
                 <input class="form-control" type="text" wire:model="montant">
                 @error('montant') <span class="error">{{ $message }}</span> @enderror
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Cryptogramme</label>
-                <input class="form-control" type="text" wire:model="crypto">
-                @error('crypto') <span class="error">{{ $message }}</span> @enderror
-            </div>
             <select class="form-select" aria-label="Default select example" wire:model="crypto_id">
-                <option selected>Portefeuille crypto à débiter</option>
                 @foreach($cryptos as $crypto)
                 <option value="{{$crypto->id}}">{{$crypto->nom}}</option>
                 @endforeach
