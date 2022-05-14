@@ -69,6 +69,10 @@ class Facture extends Model
     public $timestamps = true;
 
     // Scopes...
+    public function scopeRetrieveByUtilisateurId($query, $utilisateur_id) {
+        return $query->join('users', 'users.id', 'facture.utilisateur_id')
+        ->where('users.id', '=', $utilisateur_id);
+    }
 
     // Functions ...
 

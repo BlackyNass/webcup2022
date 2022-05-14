@@ -71,6 +71,15 @@ class Capsule extends Model
 
     // Scopes...
 
+    public function scoperetrieveByUtilisateurId($query, $utilisateur_id) {
+        return $query->join('capsule_data', 'capsule_data.capsule_id', 'capsule.id')
+        ->join('detail_facture', 'detail_facture.id', 'capsule_data.detail_facture_id')
+        ->join('facture', 'facture.id', 'detail_facture.facture_id')
+        ->join('users', 'users.id', 'facture.utilisateur_id')
+        ->join('duree', 'capsule.duree_id', 'duree.id')
+        ->where('users.id', '=', $utilisateur_id); 
+    }
+
     // Functions ...
 
     // Relations ...
