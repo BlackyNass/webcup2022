@@ -44,7 +44,11 @@
                   @forelse ($factures as $facture)
                   <tr>
                     <td >{{date('d/m/Y', strtotime($facture['created_at']))}}</td>
-                    <td >{{number_format($facture['total'], 2)}} €</td>
+                    <td >{{number_format($facture['total'], 2)}} € @if ($facture['acquite'])
+                      <a href="#" style="float: right" class="btn btn-success">Acquitée</a>
+                    @else
+                      <a href="#" style="float: right" class="btn btn-success">Payer</a>
+                    @endif</td>
                   </tr>
                   @empty
                   <tr>
@@ -56,6 +60,8 @@
         </div>
 
 
+
+
         <div class="col-12 " style="margin-top:10em;">
             <h2 id="hoverable-rows">
                 <div>
@@ -63,6 +69,8 @@
                 </div>
             </h2>
             <hr>
+
+            
 
             @forelse ( $offres as $offre)
                 <div class="card" style="width: 18rem;">

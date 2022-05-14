@@ -25,11 +25,10 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <h2>
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                    Mon tableau de bord
-                </a>
-                    </h2>
+           
+                    <a class="navbar-brand " href="{{ route('admin.dashboard') }}" style="font-weight: bold; font-size: 1em">
+                        <span style="color: #88dd33; font-size:3em">A</span>eternitas
+                    </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,7 +36,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.dashboard') }}">MON TABLEAU DE BORD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.wallet') }}">PORTEFEUILLE</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

@@ -1,8 +1,8 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\DependencyInjectionClass\DatabaseQuery; 
 
 
 class DashboardController extends Controller
@@ -13,8 +13,8 @@ class DashboardController extends Controller
         return view('admin.dashboard'); 
     }
 
-    public function datas()
+    public function wallet(DatabaseQuery $databaseQueryClass)
     {
-        return "datas"; 
+        return view('admin.wallet')->with(['wallet' => $databaseQueryClass->getWalletContentByUtilisateurId(auth()->user()->id)]);
     }
 }
