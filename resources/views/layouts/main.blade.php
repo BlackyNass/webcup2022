@@ -9,6 +9,7 @@
     <title>FOI App Landing Page</title>
     <link rel="stylesheet" href="{{asset('theme/assets/vendors/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('theme/assets/css/style.css')}}">
+    @livewireStyles
 </head>
 
 <body>
@@ -128,6 +129,7 @@
     <script src="{{asset('theme/assets/vendors/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('theme/assets/vendors/popper.js/popper.min.js')}}"></script>
     <script src="{{asset('theme/assets/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    @livewireScripts
 </body>
 
 </html>

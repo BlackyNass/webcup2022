@@ -26,8 +26,9 @@ Route::get('/services', function () {
     return view('services');
 })->name('services');
 
+Route::get('/edit-capsule/{id}', [App\Http\Controllers\CapsuleController::class, 'index'])->name('edit-capsule');
+
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
     Route::get('/datas', [App\Http\Controllers\DashboardController::class, 'datas'])->name('dashboard');
-    
 });
