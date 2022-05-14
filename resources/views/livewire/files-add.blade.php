@@ -1,10 +1,12 @@
 <div>
+    <div wire:loading wire:target="data">Uploading...</div>
+    
     <form wire:submit.prevent="add_capsule_data">
         <input type="text" wire:model="capsule_data.descriptif">
         @error('capsule_data.descriptif') <span class="error">{{ $message }}</span> @enderror
 
-        <input type="file" wire:model="capsule_data.data">
-        @error('capsule_data.data') <span class="error">{{ $message }}</span> @enderror
+        <input type="file" wire:model="data">
+        @error('data') <span class="error">{{ $message }}</span> @enderror
 
         <input type="date" wire:model="capsule_data.date_data">
         @error('capsule_data.date_data') <span class="error">{{ $message }}</span> @enderror
