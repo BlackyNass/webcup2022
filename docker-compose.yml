@@ -1,0 +1,22 @@
+version: '3.7'
+services: 
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    image: 'webcup2022'
+    container_name: webcup2022apache
+    ports:
+      - 8086:80
+    volumes:
+      - ./:/var/www/html
+  db:
+    image: mysql:5.7
+    container_name: webcup2022db
+    restart: always
+    ports: 
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: 'webcup2022'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_ROOT_PASSWORD: ""
