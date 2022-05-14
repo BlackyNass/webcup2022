@@ -12,9 +12,15 @@ class DashboardController extends Controller
 
         return view('admin.dashboard'); 
     }
-
+    
     public function wallet(DatabaseQuery $databaseQueryClass)
     {
         return view('admin.wallet')->with(['wallet' => $databaseQueryClass->getWalletContentByUtilisateurId(auth()->user()->id)]);
+    }
+    
+    public function timeline(DatabaseQuery $databaseQueryClass)
+    {
+        return view('admin.timeline'); 
+        
     }
 }

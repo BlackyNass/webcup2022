@@ -1,4 +1,4 @@
-<div class="col-6">
+<div class="col-6 ">
     <h2 id="hoverable-rows">
         <div>
             Mes capsules

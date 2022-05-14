@@ -27,7 +27,7 @@
             <div class="container">
            
                     <a class="navbar-brand " href="{{ route('admin.dashboard') }}" style="font-weight: bold; font-size: 1em">
-                        <span style="color: #88dd33; font-size:3em">A</span>eternitas
+                        <img src="{{asset('css/logo-aeternitas-webcup2.jpg')}}" width="250" alt="Logo aeternitas ">
                     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -36,12 +36,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                        @auth
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('admin.dashboard') }}">MON TABLEAU DE BORD</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('admin.wallet') }}">PORTEFEUILLE CRYPTO</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.timeline') }}">VOIR MA TIMELINE DE DONNEES</a>
+                        </li>
+                            
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
