@@ -4,19 +4,14 @@
 <div class="header-content">
     <div class="row">
         <div class="col-md-6">
-            <h1>Great app that makes your life awesome</h1>
-            <p class="text-dark">He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement.</p>
-            <button class="btn btn-primary mb-4">Get Started</button>
-            <div class="my-2">
-                <p class="header-app-download-title">GET OUR MOBILE APP</p>
-            </div>
-            <div>
-                <button class="btn btn-app-download mr-2"><img src="assets/images/ios.svg" alt="App store"></button>
-                <button class="btn btn-app-download"><img src="assets/images/android.svg" alt="play store"></button>
-            </div>
+            <h1>Qui n'a pas un jour rêvé de transmettre aux générations futures un
+                témoignage de son existence ?
+                </h1>
+            <a href="{{ route('register')}}" class="btn btn-primary mb-4">JE CREE MON COMPTE</a>
+
         </div>
         <div class="col-md-6">
-            <img src="assets/images/app_1.png" alt="app" width="388px" class="img-fluid">
+            <img src="{{ asset('css/undraw_stars_re_6je7.svg')}}" alt="app" width="450px" class="img-fluid">
         </div>
     </div>
 </div>
@@ -208,8 +203,8 @@
 </section>
 <section class="py-5 mb-5">
     <div class="container">
-        <h2>Satisfied Users</h2>
-        <p class="text-muted mb-5">Thank you for your very professional and prompt response. I wished I had found you before </p>
+        <h2>TEMOIGNAGES CLIENTS</h2>
+        <p class="text-muted mb-5">Nos clients parlent de leurs expériences !</p>
         <div class="row">
             <div class="col-md-4 foi-review mb-5 mb-md-0">
                 <div class="foi-rating">
@@ -219,13 +214,16 @@
                     <span class="fas fa-star checked"></span>
                     <span class="fas fa-star checked"></span>
                 </div>
-                <h5 class="foi-review-heading">Great support available</h5>
-                <p class="foi-review-content">Thank you for your very professional and prompt response. I wished I had found you before I spent money on a competitors theme.</p>
+                <h5 class="foi-review-heading">Perpétuer l’héritage familial</h5>
+                <p class="foi-review-content">
+                    Au fil des ans, j'ai passé de nombreuses heures à rechercher de vieilles photos et à documenter l'histoire de notre lignée. 
+
+La solution AETERNITAS permet de rassembler facilement les photos et les souvenirs en un seul endroit.  Des archives d’images photographiques en noir et blanc, conçues pour durer des milliards d'années
+En stockant l'histoire de nos vies et en laissant des messages privés à nos enfants et petits-enfants, nous créons un héritage qui vivra à jamais.
+                </p>
                 <div class="media foi-review-user">
-                    <img src="assets/images/avatar/avatar_11.jpg" alt="user" class="avatar">
                     <div class="media-body">
-                        <h6 class="mb-0">Amarachi Nkechi</h6>
-                        <p>UX Designer</p>
+                        <h6 class="mb-0">Bacar A</h6>
                     </div>
                 </div>
 
@@ -238,13 +236,17 @@
                     <span class="fas fa-star checked"></span>
                     <span class="fas fa-star checked"></span>
                 </div>
-                <h5 class="foi-review-heading">Great support available</h5>
-                <p class="foi-review-content">Thank you for your very professional and prompt response. I wished I had found you before I spent money on a competitors theme.</p>
+                <h5 class="foi-review-heading">Placer mes oeuvres d’art dans l’espace</h5>
+                <p class="foi-review-content">
+                    En tant qu’artiste je souhaitais perpétuer mon œuvre en luttant contre les effets terrestres de la rouille, de l'érosion et de la décomposition.
+                    J’ai opté pour le lancement en orbite à bord d'un satellite. Les satellites et les vaisseaux spatiaux présentent  la garantie de rester en orbite quasi éternellement.
+                    Le seul endroit qui me semblait inaltérable était l’espace. Ainsi mon art pouvait être partagé avec des formes autres qu’humaines.
+                    Cette expérience a complètement changé ma façon de regarder le ciel nocturne.
+                    
+                </p>
                 <div class="media foi-review-user">
-                    <img src="assets/images/avatar/avatar_12.jpg" alt="user" class="avatar">
                     <div class="media-body">
-                        <h6 class="mb-0">Margje Jutten</h6>
-                        <p>Developer</p>
+                        <h6 class="mb-0">Salvador D</h6>
                     </div>
                 </div>
 
@@ -257,13 +259,15 @@
                     <span class="fas fa-star checked"></span>
                     <span class="fas fa-star checked"></span>
                 </div>
-                <h5 class="foi-review-heading">Great support available</h5>
-                <p class="foi-review-content">Thank you for your very professional and prompt response. I wished I had found you before I spent money on a competitors theme.</p>
+                <h5 class="foi-review-heading">Marquer l'histoire</h5>
+                <p class="foi-review-content">J'ai toujours été un homme de changement,
+                    Nous sommes en train de changer le monde, de changer l'histoire, et vous en êtes ou pas.
+                    J'ai toujours fait parti de ceux qui ont voulu changer les règles
+                    Mon tweet annonçant le rachat de twitter a marqué l’histoire. A ce titre, il devrait être conservé pour les générations futures.
+                    </p>
                 <div class="media foi-review-user">
-                    <img src="assets/images/avatar/avatar_13.jpg" alt="user" class="avatar">
                     <div class="media-body">
-                        <h6 class="mb-0">Monica Böttger</h6>
-                        <p>UX Designer</p>
+                        <h6 class="mb-0">Elon M</h6>
                     </div>
                 </div>
 
@@ -274,7 +278,7 @@
 <section class="py-5 mb-5">
     <div class="container">
         <h2>FAQ</h2>
-        <p class="section-subtitle">Frequently Asked Questions</p>
+        <p class="section-subtitle">Vous avez une question ? Vous pouvez trouver les réponses aux questions les plus courantes posées par nos clients.</p>
         <div class="row">
             <div class="col-lg-6">
                 <div class="card mb-3 landing-faq-card">
