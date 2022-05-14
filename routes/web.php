@@ -20,11 +20,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
 Route::get('/services', function () {
     return view('services');
 })->name('services');
+
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(function () {
+    Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/datas', [App\Http\Controllers\DashboardController::class, 'datas'])->name('dashboard');
+    
 });
