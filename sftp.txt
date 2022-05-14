@@ -1,0 +1,6 @@
+Team Kant 
+
+--SFTP--
+host : access872314585.webspace-data.io
+user : u104815686-webcup
+password : w3bcup_2022#
