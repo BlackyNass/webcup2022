@@ -32,7 +32,7 @@
                                             <td>{{$crypto->nom}}</td>
                                             <td>{{$crypto->valeur}}</td>
                                             <td style="text-align: right">
-                                                <button class="btn btn-success-soft btn-pill btn-sm"> Déposer</button>
+                                                <button class="btn btn-success btn-pill btn-sm"> Alimenter</button>
                                                 <!--<button class="btn btn-danger-soft btn-pill btn-sm" disabled> Retirer</button>-->
                                             </td>
                                         </tr>

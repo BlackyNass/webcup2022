@@ -64,10 +64,26 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user =  User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+    /**
+     * Generation automatique d'un wallet, avec les cryptos disponibles
+     */
+        $cryptos = Crypto::all();
+
+        if ($cryptos) {
+
+            foreach($cryptos as $crypto) {
+                Wallet::create(['user_id' => $user->id, 'crypto_id' => $crypto->id, 'valeur' => 0]);
+            }
+
+        }
+
+        return $user; 
     }
+
 }

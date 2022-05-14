@@ -40,7 +40,7 @@
                             <a class="nav-link" href="{{ route('admin.dashboard') }}">MON TABLEAU DE BORD</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.wallet') }}">PORTEFEUILLE</a>
+                            <a class="nav-link" href="{{ route('admin.wallet') }}">PORTEFEUILLE CRYPTO</a>
                         </li>
                     </ul>
 

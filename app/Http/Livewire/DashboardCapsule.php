@@ -14,6 +14,15 @@ class DashboardCapsule extends Component
     public $factures    = [];
     public $offres      = [];
 
+
+    public function commanderCapsule ($capsule_id) {
+
+    }
+
+    public function payerFacture($facture_id) {
+
+    }
+
     public function mount()
     {
         $this->capsules = Capsule::retrieveByUtilisateurId(auth()->user()->id)->get()->toArray();
