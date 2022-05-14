@@ -31,4 +31,5 @@ Route::get('/edit-capsule/{id}', [App\Http\Controllers\CapsuleController::class,
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
     Route::get('/wallet', [App\Http\Controllers\DashboardController::class, 'wallet'])->name('wallet');
+    Route::get('/timeline', [App\Http\Controllers\DashboardController::class, 'timeline'])->name('timeline');
 });

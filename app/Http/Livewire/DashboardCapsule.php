@@ -16,7 +16,7 @@ class DashboardCapsule extends Component
 
 
     public function commanderCapsule ($capsule_id) {
-
+        
     }
 
     public function payerFacture($facture_id) {
@@ -37,7 +37,7 @@ class DashboardCapsule extends Component
         $this->capsules = Capsule::retrieveByUtilisateurId(auth()->user()->id)->get()->toArray();
         $this->factures = Facture::retrieveByUtilisateurId(auth()->user()->id)->get()->toArray();
 
-        $this->offres = [1,2,3,2]; 
+        $this->offres = Capsule::all(); 
 
         //dd($factures);
     }

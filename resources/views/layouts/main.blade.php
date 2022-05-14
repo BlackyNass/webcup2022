@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FOI App Landing Page</title>
+    <title>Aeternitas</title>
     <link rel="stylesheet" href="{{asset('theme/assets/vendors/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('theme/assets/css/style.css')}}">
     @livewireStyles
@@ -17,7 +17,8 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light foi-navbar">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.svg" alt="FOI">
+                    <img src="{{asset('css/logo-aeternitas-webcup2.jpg')}}" width="300" alt="Logo Aeternitas">
+                    
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,13 +26,14 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/">Accueil<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/">ACCUEIL</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('services')}}">NOS OFFRES ET SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('services')}}">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('contact')}}">Contact</a>
+                            <a class="nav-link" href="{{route('contact')}}">CONTACT</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav mt-2 mt-lg-0">
