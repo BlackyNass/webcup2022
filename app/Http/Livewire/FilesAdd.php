@@ -19,10 +19,11 @@ class FilesAdd extends Component
     public CapsuleData $capsule_data;
     public DetailFacture $detail_facture;
     public $type_donnees = null;
+    public $data;
 
     protected $rules = [
         'capsule_data.descriptif' => 'required',
-        'capsule_data.data' => 'max:1024',
+        'data' => 'max:4096',
         'capsule_data.date_data' => 'required',
         'detail_facture.type_donnee_id' => 'required',
     ];
@@ -44,7 +45,7 @@ class FilesAdd extends Component
 
     public function add_capsule_data()
     {
-        if($this->detail_facture->type_donnee_id == null){
+        if ($this->detail_facture->type_donnee_id == null) {
             $this->detail_facture->type_donnee_id = TypeDonnee::first()->id;
         }
         $this->detail_facture->prix_unitaire = 0;
@@ -52,10 +53,12 @@ class FilesAdd extends Component
         $this->detail_facture->facture_id = $this->facture_id;
         $this->detail_facture->save();
         $this->capsule_data->capsule_id = $this->capsule_id;
-        $this->capsule_data->data->store('files');
+        $this->data->store('files');
+        $this->capsule_data->data = $this->data->getRealPath();
         $this->capsule_data->detail_facture_id = $this->detail_facture->id;
-        dd($this->capsule_data);
         $this->capsule_data->save();
+        $this->capsule_data = new CapsuleData();
+        $this->detail_facture = new DetailFacture();
     }
 
     public function render()
