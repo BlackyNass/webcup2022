@@ -13,6 +13,7 @@ class DashboardCapsule extends Component
     public $capsules    = [];
     public $factures    = [];
     public $offres      = [];
+    public $with_buttons = true; 
 
 
     public function commanderCapsule ($capsule_id) {

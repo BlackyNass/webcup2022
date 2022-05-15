@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use \App\Models\Capsule; 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('accueil');
+    $offres = Capsule::all(); 
+    return view('accueil')->with(['offres' => $offres, 'with_buttons' => false]);
 });
 
 Auth::routes();
@@ -22,9 +23,15 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
 Route::post('/contact_send', [App\Http\Controllers\ContactController::class, 'send'])->name('contact_send');
+
 Route::get('/services', function () {
     return view('services');
 })->name('services');
+
+Route::get('/presentation', function () {
+    return view('presentation'); 
+})->name('presentation');
+
 
 Route::get('/edit-capsule/{id}', [App\Http\Controllers\CapsuleController::class, 'index'])->name('edit-capsule');
 
