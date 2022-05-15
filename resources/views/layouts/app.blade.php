@@ -17,7 +17,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('theme/assets/css/style.css') }}" rel="stylesheet">
 
-    <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     
     <!-- <link href="{{ asset('timesheet/timesheet.min.css') }}" rel="stylesheet"> -->
@@ -44,7 +43,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
+  
                     <ul class="navbar-nav me-auto">
                         @auth
                         <li class="nav-item">
@@ -60,21 +59,23 @@
                         @endauth
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+
+                            @if (Route::has('register'))
+                                <li class="nav-item mr-2 mb-3 mb-lg-0">
+                                    <a class="btn btn-secondary" href="{{ route('register')}}">S'INSCRIRE</a>
                                 </li>
                             @endif
 
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
+                            @if (Route::has('login'))
+                                
+                            <li class="nav-item">
+                                <a class="btn btn-secondary" href="{{ route('login')}}">SE CONNECTER</a>
+                            </li>
                             @endif
+
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

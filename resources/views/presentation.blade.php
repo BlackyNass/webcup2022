@@ -3,22 +3,22 @@
 @section('content')
 <main class="page-about">
     <div class="container">
-        <section class="page-header">
-            <h1 style="color: #43b24a">“Ô temps suspends ton vol”</h1>
+        <section class="page-header " style="padding: 2em!important">
+            <h1 style="color: #ed156d">“Ô temps suspends ton vol”</h1>
         </section>
-        <section class="mt-4 pt-0">
+        <section class="mt-2 pt-0">
             <div class="row">
                 <div class="col-md-6 mb-4 mb-md-0 pr-lg-0">
                 
                     <div class="about-section-one-content" style="text-align: justify">
                         <p>
-                            <i>“Eh quoi ! n’en pourrons-nous fixer au moins la trace ?
-Quoi ! passés pour jamais ! quoi ! tout entiers perdus !
-Ce temps qui les donna, ce temps qui les efface,
-Ne nous les rendra plus !
-Eternité, néant, passé, sombres abîmes”,</i>
-<br>
-<strong>“Le Lac" A. de Lamartine</strong>
+                            <i>“Eh quoi ! n’en pourrons-nous fixer au moins la trace ? <br>
+                                Quoi ! passés pour jamais ! quoi ! tout entiers perdus ! <br>
+                                Ce temps qui les donna, ce temps qui les efface,<br>
+                                Ne nous les rendra plus ! <br>
+                                Eternité, néant, passé, sombres abîmes”,</i>
+                                <br>
+                                <strong>“Le Lac" A. de Lamartine</strong>
                         </p>
 
                         
@@ -29,11 +29,11 @@ Eternité, néant, passé, sombres abîmes”,</i>
                 </div>
             </div>
         </section>
-        <section class="mt-4">
+        <section class="mt-2">
             <div class="row">
 
                 <div class="col-12">
-                    <h2 class="about-section-two-title">Nous rendons vos meilleurs souvenirs éternels !</h2>
+                    <h2 class="about-section-two-title" style="color: #ed156d">Nous rendons vos meilleurs souvenirs éternels !</h2>
                     <div class="" style="text-align: justify">
                         <p>
                             Beaucoup se demandent sans doute ce qui se passera une fois que leur vie sur cette terre se sera terminée. Beaucoup aimeraient adresser un dernier message, figé dans le temps à leurs proches et descendants. L’aspiration à l’éternité est aussi vieille que l’humanité.
@@ -43,17 +43,20 @@ Eternité, néant, passé, sombres abîmes”,</i>
                             Le présent fait naître le souvenir mais l'homme seul, par la pensée, ne parvient pas à arrêter le temps sur un moment de bonheur, à ancrer son existence dans le mouvement inéluctable du temps, dans l'océan des âges. L'homme, comme un navigateur sur l'océan, traverse la vie, toujours poussé de façon involontaire par cette fuite du temps. Et ce temps est capricieux, il efface certains souvenirs mais en garde aussi intact certains. Comment faire revivre le souvenir du bonheur passé que le temps a estompé et le pérenniser à jamais ? 
                             
                         </p>
-                        <p>
 
-                            <h4 style="color: #44007a">AETERNITAS</h4> se propose de sauvegarder vos données dans des capsules temporelles sécurisées. Dans l’antiquité romaine le terme désignait la personnification divine de l'éternité.
-                        </p>
+                        <div class="" style="padding: 2em; background-color: #eaf0f1; border-radius:10px; ">
 
-
-<p>
-
-    <h4 style="color: #44007a">AETERNITAS</h4> se veut comme témoin du temps et de votre vécu sur terre. Les souvenirs, les moments de vie figés dans nos capsules permettront de restituer à vos descendances, à l’humanité et/ou à toute forme de vivant dans l’univers qui nous entourent une part de votre passage sur terre.
-</p>
-                        
+                            <p>
+    
+                                <strong style="color: #ed156d">AETERNITAS</strong> se propose de sauvegarder vos données dans des capsules temporelles sécurisées. Dans l’antiquité romaine le terme désignait la personnification divine de l'éternité.
+                            </p>
+    
+                            <p>
+    
+                                <strong style="color: #ed156d">AETERNITAS</strong> se veut comme témoin du temps et de votre vécu sur terre. Les souvenirs, les moments de vie figés dans nos capsules permettront de restituer à vos descendances, à l’humanité et/ou à toute forme de vivant dans l’univers qui nous entourent une part de votre passage sur terre.
+                            </p>
+                            
+                        </div>
                     </div>
                 </div>
             </div>

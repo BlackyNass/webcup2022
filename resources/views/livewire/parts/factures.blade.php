@@ -13,13 +13,18 @@
       @forelse ($factures as $facture)
       <tr>
         <td>{{date('d/m/Y',$facture['created_at'])}}</td>
-        <td>{{number_format($facture['total'], 2)}} € @if ($facture['acquite'])
-          <a href="#" style="float: right" class="btn btn-success">Acquitée</a>
+        <td>{{number_format($facture['total'], 2)}} € 
+          @if ($facture['acquite'])
+          <a href="#" style="float: right" class="btn btn-success  m-1">Acquitée</a>
           @else
-          <button wire:click="send_facture_id({{$facture['id']}})" style="float: right" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          <button wire:click="send_facture_id({{$facture['id']}})" style="float: right" type="button" class="btn btn-success  m-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Payer
           </button>
           @endif
+
+          <button  style="float: right" type="button" class="btn btn-danger m-1" >
+            PDF
+          </button>
         </td>
       </tr>
       @empty

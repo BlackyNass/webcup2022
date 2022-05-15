@@ -91,11 +91,11 @@
 
 @include('livewire.parts.offres', ['with_buttons' => false])
 
-<section class="py-5 mb-4">
+<section class="py-5 mb-4" style="padding: 2em; background-color: #eaf0f1; border-radius:10px; ">
     <div class="container">
-        <h2>Temoignages clients</h2>
+        <h2 style="color: #ED156D">Temoignages clients</h2>
         <p class="text-muted mb-5">Nos clients parlent de leurs expériences !</p>
-        <div class="row">
+        <div class="row" style="text-align: justify">
             <div class="col-md-4 foi-review mb-5 mb-md-0">
                 <div class="foi-rating">
                     <span class="fas fa-star checked"></span>
@@ -152,7 +152,7 @@
                 <h5 class="foi-review-heading">Marquer l'histoire</h5>
                 <p class="foi-review-content">J'ai toujours été un homme de changement,
                     Nous sommes en train de changer le monde, de changer l'histoire, et vous en êtes ou pas.
-                    J'ai toujours fait parti de ceux qui ont voulu changer les règles
+                    J'ai toujours fait parti de ceux qui ont voulu changer les règles.
                     Mon tweet annonçant le rachat de twitter a marqué l’histoire. A ce titre, il devrait être conservé pour les générations futures.
                     </p>
                 <div class="media foi-review-user">
