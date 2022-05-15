@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-
+use DB;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -72,12 +72,13 @@ class Capsule extends Model
     // Scopes...
 
     public function scoperetrieveByUtilisateurId($query, $utilisateur_id) {
-        return $query->join('capsule_data', 'capsule_data.capsule_id', 'capsule.id')
+        $result = $query->join('capsule_data', 'capsule_data.capsule_id', 'capsule.id')
         ->join('detail_facture', 'detail_facture.id', 'capsule_data.detail_facture_id')
         ->join('facture', 'facture.id', 'detail_facture.facture_id')
         ->join('users', 'users.id', 'facture.utilisateur_id')
         ->join('duree', 'capsule.duree_id', 'duree.id')
-        ->where('users.id', '=', $utilisateur_id); 
+        ->where('facture.utilisateur_id', '=', $utilisateur_id);
+        return $result; 
     }
 
     // Functions ...

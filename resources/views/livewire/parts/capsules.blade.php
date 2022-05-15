@@ -16,7 +16,7 @@
           @forelse ($capsules as $capsule)
           <tr>
             <td >{{$capsule['libelle']}}</td>
-            <td >{{$capsule['duree']}}</td>
+            <td >{{$capsule['duree_id']}}</td>
           </tr>
           @empty
           <tr>

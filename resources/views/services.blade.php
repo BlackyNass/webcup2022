@@ -23,6 +23,7 @@
                                 
                             </div>
                         </div>
+                        @livewire('tableau-offres')
                         <div class="row mb-5">
                             <div class="col-12" style="padding: 2em; background-color: #eaf0f1; border-radius:10px; ">
                                 <strong style="color: #ed156d"> AETERNITAS </strong> veut donner à chacun la possibilité de laisser une trace, un héritage, un souvenir, un message, une photo, une image, un document témoignant de notre passage sur terre.</h5>
