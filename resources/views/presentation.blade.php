@@ -60,6 +60,7 @@ Eternité, néant, passé, sombres abîmes”,</i>
         </section>
         <section class="mt-4 mb-5" style="text-align: justify">
             <h5 class="text-center font-os mb-5">Qui sommes nous ?</h5>
+            
             <p>Nous sommes une équipe jeune constituée de talent divers. Nous avons à cœur de révolutionner l’existence humaine en lui permettant de rentrer dans une autre dimension.</p>
             <div class="row">
                 <br>

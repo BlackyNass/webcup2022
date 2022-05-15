@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use \App\Models\Capsule; 
+use \App\Models\Faqs; 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +16,8 @@ use \App\Models\Capsule;
 
 Route::get('/', function () {
     $offres = Capsule::all(); 
-    return view('accueil')->with(['offres' => $offres, 'with_buttons' => false]);
+    $faqs = Faqs::all();
+    return view('accueil')->with(['offres' => $offres, 'with_buttons' => false, 'faqs' => $faqs]);
 });
 
 Auth::routes();
