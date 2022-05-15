@@ -62,9 +62,10 @@ class ModalPaiementContent extends Component
             }
             $wallet = Wallet::where('user_id', auth()->id())
             ->where('crypto_id', $this->crypto_id)->get()->first();
-            if (empty($wallet)) {
+            if ($wallet != null) {
                 if ($wallet->valeur > 0) {
                     $wallet->valeur--;
+                    $wallet->save();
                 } else {
                     session()->flash('message', 'Ressource insuffisante !');
                     return;

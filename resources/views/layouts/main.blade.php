@@ -12,7 +12,7 @@
     @livewireStyles
 </head>
 
-<body>
+<body class="index white">
     <header class="foi-header landing-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light foi-navbar">
