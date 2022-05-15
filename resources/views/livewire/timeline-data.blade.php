@@ -24,7 +24,7 @@
     <div class="timeline-container" id="timeline-1">
         <div class="timeline-header">
             <h2 class="timeline-header__title">Ma Timeline</h2>
-            <h3 class="timeline-header__subtitle">Bienvenu</h3>
+            <h3 class="timeline-header__subtitle">Bienvenue</h3>
         </div>
         <div class="timeline">
             @foreach($capsule_data as $capsule_single_data)
