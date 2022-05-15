@@ -24,11 +24,11 @@
     <div class="timeline-container" id="timeline-1">
         <div class="timeline-header">
             <h2 class="timeline-header__title">Ma Timeline</h2>
-            <h3 class="timeline-header__subtitle">test</h3>
+            <h3 class="timeline-header__subtitle">Bienvenu</h3>
         </div>
         <div class="timeline">
             @foreach($capsule_data as $capsule_single_data)
-            <div class="timeline-item" data-text="{{$capsule_single_data->descriptif}}">
+            <div class="timeline-item" data-text="{{$capsule_single_data->date_data}}">
                 <div class="timeline__content"><img class="timeline__img" src="{{asset('img/img.jpg')}}" />
                     <h2 class="timeline__content-title">{{$capsule_single_data->date_data}}</h2>
                     <p class="timeline__content-desc">{{$capsule_single_data->descriptif}}</p>
