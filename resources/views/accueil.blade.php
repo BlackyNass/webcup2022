@@ -1,13 +1,19 @@
 @extends('layouts.main')
 
 @section('header-content')
-<div class="header-content">
+<div class="header-content" style="padding-top: 2em!important">
     <div class="row">
-        <div class="col-md-6">
-            <h1>Qui n'a pas un jour rêvé de transmettre aux générations futures un
+        <div class="col-md-6" style="text-align: justify">
+            <h3>Qui n'a pas un jour rêvé de transmettre aux générations futures un
                 témoignage de son existence ?
-                </h1>
-            <a href="{{ route('register')}}" class="btn btn-primary mb-4">JE CREE MON COMPTE</a>
+                </h3>
+                <p class="foi-review-content">
+                    La quête d’une vie éternelle a toujours fasciné l’être humain. A défaut de pouvoir dompter la mort, chacun de nous s’évertue à laisser une trace indélébile sur Terre.
+
+                Des dizaines de milliers de clients particuliers ont déjà fait confiance à AETERNITAS pour les aider à formaliser et conserver une trace de leurs passage sur terre.
+                    
+                </p>
+            <a href="{{ route('register')}}" class="btn mb-4" style="background-color: #ED156D; color:#fff">COMMENCEZ</a>
 
         </div>
         <div class="col-md-6">
@@ -68,8 +74,7 @@
                             <div class="d-flex flex-wrap justify-content-center">
                              
                                     <img src="{{asset('css/ariane_espace.png')}}" alt="Slack" class="img-fluid">
-                               
-                          
+
                             </div>
                         </div>
                     </div>
@@ -103,8 +108,8 @@
                 <p class="foi-review-content">
                     Au fil des ans, j'ai passé de nombreuses heures à rechercher de vieilles photos et à documenter l'histoire de notre lignée. 
 
-La solution AETERNITAS permet de rassembler facilement les photos et les souvenirs en un seul endroit.  Des archives d’images photographiques en noir et blanc, conçues pour durer des milliards d'années
-En stockant l'histoire de nos vies et en laissant des messages privés à nos enfants et petits-enfants, nous créons un héritage qui vivra à jamais.
+                    La solution AETERNITAS permet de rassembler facilement les photos et les souvenirs en un seul endroit.  Des archives d’images photographiques en noir et blanc, conçues pour durer des milliards d'années
+                    En stockant l'histoire de nos vies et en laissant des messages privés à nos enfants et petits-enfants, nous créons un héritage qui vivra à jamais.
                 </p>
                 <div class="media foi-review-user">
                     <div class="media-body">

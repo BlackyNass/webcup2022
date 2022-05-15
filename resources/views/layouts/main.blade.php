@@ -64,10 +64,10 @@
         <div class="container">
             <div class="row footer-content">
                 <div class="col-xl-6 col-lg-7 col-md-8">
-                    <h2 class="mb-0">Une question ou une demande particulière ?  </h2>
+                    <h2 class="mb-0" style="color:#fff;">Une question ou une demande particulière ?  </h2>
                 </div>
                 <div class="col-md-4 col-lg-5 col-xl-6 py-3 py-md-0 d-md-flex align-items-center justify-content-end">
-                    <a href="{{route('contact')}}" class="btn btn-danger btn-lg">Contactez-nous
+                    <a href="{{route('contact')}}" class="btn  btn-lg" style="background-color: #ED156D; color:#fff">Contactez-nous
                     </a>
                 </div>
             </div>

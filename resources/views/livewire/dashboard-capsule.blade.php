@@ -7,7 +7,7 @@
             <div class="inner">
                 <h3 id="stat_dossiers_collectes">0</h3>
 
-                <p>NOMBRE DE SOUSCRIPTION</p>
+                <p>NOMBRE DE CAPSULE COMMANDEES</p>
             </div>
             <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -18,11 +18,11 @@
     
     <div class="col-6">
 
-        <div class="small-box bg-success p-3" style="border-radius: 0.5em; color: #fff">
+        <div class="small-box bg-danger p-3" style="border-radius: 0.5em; color: #fff">
             <div class="inner">
                 <h3 id="stat_dossiers_valides">0</h3>
 
-                <p>PLUS-VALUE GENERES</p>
+                <p>FACTURE IMPAYEES</p>
             </div>
             <div class="icon">
                 <i class="ion ion-stats-bars"></i>

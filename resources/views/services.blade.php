@@ -10,7 +10,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 mb-5 mb-md-0">
-                                <img src="{{ asset('css/unsplash-photo-5.jpg')}}" alt="special offers" class="img-fluid" width="492px" style="border-radius: 10px">
+                                <img src="{{ asset('css/undraw_the_world_is_mine_re_j5cr.svg')}}" alt="special offers" class="img-fluid" width="492px" style="border-radius: 10px">
                             </div>
                             <div class="col-md-6" style="text-align: justify">
                                 <h2 class="section-title">Laisser une trace de notre passage sur terre</h2>
@@ -18,12 +18,18 @@
                                     <br>
                                     Contrairement aux prévisions du calendrier Maya, la fin du monde n’a pas eu lieu en 2012. Mais cette épisode aussi palpitante que angoissante a amené un certain nombre d’entre nous à nous poser des questions sur notre existence sur cette terre et plus généralement sur les traces que nous laisserons.
                                     <br>
-                                   <strong style="color: #40b347"> AETERNITAS </strong> veut donner à chacun la possibilité de laisser une trace, un héritage, un souvenir, un message, une photo, une image, un document témoignant de notre passage sur terre.</h5>
+                                   
             </p>
                                 
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mb-5">
+                            <div class="col-12" style="padding: 2em; background-color: #eaf0f1; border-radius:10px; ">
+                                <strong style="color: #ed156d"> AETERNITAS </strong> veut donner à chacun la possibilité de laisser une trace, un héritage, un souvenir, un message, une photo, une image, un document témoignant de notre passage sur terre.</h5>
+                            </div>
+                        </div>
+
+                        <div class="row" style="text-align: justify">
                             
                             <div class="col-md-6 mb-3">
                                 <div class="media landing-feature">
@@ -44,6 +50,21 @@
                                 <div class="media landing-feature">
                                     <span class="landing-feature-icon"></span>
                                     <div class="media-body">
+                                        <h5>Garantie sécurité</h5>
+                                        <p>
+                                            <ul>
+                                                <li>Nous prenons la sécurité des données au sérieux. Garantir la conservation de vos données est notre priorité.
+                                                    Grâce à nos capsules temporelles sécurisées vous avez la garantie d’une sauvegarde fiable de vos données personnelles.</li>
+                                            </ul>
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="media landing-feature">
+                                    <span class="landing-feature-icon"></span>
+                                    <div class="media-body">
                                         <h5>Capsule dédiée</h5>
                                         <p>
                                             <ul>
@@ -56,14 +77,18 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="col-md-6 mb-3">
                                 <div class="media landing-feature">
                                     <span class="landing-feature-icon"></span>
                                     <div class="media-body">
-                                        <h5>Garantie sécurité</h5>
+                                        <h5>Confidentialité </h5>
                                         <p>
-                                            Nous prenons la sécurité des données au sérieux. Garantir la conservation de vos données est notre priorité.
-                                            Grâce à nos capsules temporelles sécurisées vous avez la garantie d’une sauvegarde fiable de vos données personnelles.
+                                            <ul>
+                                                <li>Par défaut, tout est privé. Vous pouvez partager des éléments avec votre famille et vos amis, ou les rendre publics. Nous tâchons de respecter strictement vos volontés. 
+                                                </li>
+                                            </ul>
+                                            
                                         </p>
                                     </div>
                                 </div>
