@@ -18,10 +18,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('timesheet/timesheet.min.css') }}" rel="stylesheet"> -->
+    <link href="{{ asset('vertical-timeline/assets/css/style.css') }}" rel="stylesheet">
 
     @livewireStyles
 </head>
-<body>
+<body class="index white">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -99,6 +101,10 @@
             @yield('content')
         </main>
     </div>
+    <!-- <script src="{{asset('timesheet/timesheet.min.js')}}"></script> -->
+    <script src="{{asset('js/jquery-3.6.0.js')}}"></script>
+    <script src="{{asset('vertical-timeline/assets/js/main.js')}}"></script>
+    <script src="{{asset('js/custom.js')}}"></script>
 
     @livewireScripts
 </body>
