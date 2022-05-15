@@ -13,6 +13,13 @@
 </head>
 
 <body class="index white">
+    <div>
+        @if (session()->has('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+        @endif
+    </div>
     <header class="foi-header landing-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light foi-navbar">
@@ -59,6 +66,7 @@
             @yield('header-content')
         </div>
     </header>
+
     @yield('content')
     <footer class="foi-footer text-white">
         <div class="container">

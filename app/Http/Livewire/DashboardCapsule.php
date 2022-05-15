@@ -19,7 +19,7 @@ class DashboardCapsule extends Component
     public $with_buttons = true; 
 
     public function is_linked($capsule_id){
-        dd($this->capsules);
+    
         return in_array(Capsule::find($capsule_id), $this->capsules);
     }
 

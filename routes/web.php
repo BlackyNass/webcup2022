@@ -18,7 +18,7 @@ Route::get('/', function () {
     $offres = Capsule::all(); 
     $faqs = Faqs::all();
     return view('accueil')->with(['offres' => $offres, 'with_buttons' => false, 'faqs' => $faqs]);
-});
+})->name('accueil');
 
 Auth::routes();
 

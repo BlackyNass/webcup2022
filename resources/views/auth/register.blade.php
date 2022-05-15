@@ -8,7 +8,7 @@
                     <section class="auth-wrapper">
                         <div class="row">
                             <div class="col-md-6 mb-4 mb-md-0">
-                                <h2 class="auth-section-title">Créez mon votre compte et accedez à toutes nos fonctionnalitées</h2>
+                                <h2 class="auth-section-title">Créez mon votre compte et accedez à toutes nos fonctionnalités</h2>
                                 <form method="POST" action="{{ route('register') }}">
                                     @csrf
                                     <div class="form-group">
