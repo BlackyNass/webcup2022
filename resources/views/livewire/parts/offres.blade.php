@@ -16,7 +16,6 @@
                             <button type="button" class="btn btn-light" wire:click="commanderCapsule({{$offre->id}})">Commander cette capsule</button>
                         </li>
                     </ul>
-                    @endif
 
                 </div>
             </div>
