@@ -45,11 +45,11 @@ class ModalPaiementContent extends Component
                 "numero_carte" => 'required',
                 "mois_exp" => 'required',
                 "annee_exp" => 'required',
+                "crypto" => 'required'
             ];
         } elseif ($this->mode_paiement == 2) {
             $this->rules = [
                 "montant" => 'required|numeric',
-                "crypto" => 'required'
             ];
         } else {;
         }
@@ -57,8 +57,11 @@ class ModalPaiementContent extends Component
         $this->validate($this->rules);
 
         if ($this->mode_paiement == 2) {
+            if(empty($this->crypto_id)){
+                $this->crypto_id = Cryptos::first()->id;
+            }
             $wallet = Wallet::where('user_id', auth()->id())
-                ->where('crypto_id', $this->crypto_id)->get();
+            ->where('crypto_id', $this->crypto_id)->get()->first();
             if (empty($wallet)) {
                 if ($wallet->valeur > 0) {
                     $wallet->valeur--;
