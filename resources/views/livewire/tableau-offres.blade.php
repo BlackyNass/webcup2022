@@ -1,64 +1,102 @@
 <div>
-    <div class="row">
-        <div class="col">
-            <label for="">CAPSULES</label>
-        </div>
-        @foreach(App\Models\Capsule::all() as $capsule)
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{$capsule->libelle}}</h5>
-                    <p class="card-text">{{$capsule->tarif_base}}</p>
-                </div>
-            </div>
-        </div>
-        @endforeach
+    <div>
+        <table class="m-5">
+            <thead>
+                <tr>
+                    <td><label for="">CAPSULES</label></td>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">CAPSULE INTERGALACTIQUE</h5>
+                                <p class="card-text">158634 €</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">CAPSULE SPACIALE</h5>
+                                <p class="card-text">185696 €</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">CAPSULE TERRESTRE</h5>
+                                <p class="card-text">56233 €</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="">TYPES</label></td>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Mutualisé</h5>
+                                <p class="card-text">12535 €</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Dédié</h5>
+                                <p class="card-text">2356 €</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">EMPLACEMENTS</label></td>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">USA</h5>
+                                <p class="card-text">23252 €</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Mars</h5>
+                                <p class="card-text">15693 €</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">France</h5>
+                                <p class="card-text">12523 €</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">DUREES DE STOCKAGE</label></td>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">10 ans</h5>
+                                <p class="card-text">125 €</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">5 ans</h5>
+                                <p class="card-text">586 €</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="row">
-        <div class="col">
-            <label for="">TYPES</label>
-        </div>
-
-        @foreach(App\Models\TypeCapsule::all() as $type_capsule)
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{$type_capsule->libelle}}</h5>
-                    <p class="card-text">{{$type_capsule->tarif}}</p>
-                </div>
-            </div>
-        </div>
-        @endforeach
-    </div>
-    <div class="row">
-        <div class="col">
-            <label for="">EMPLACEMENTS</label>
-        </div>
-        @foreach(App\Models\Emplacement::all() as $emplacement)
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{$emplacement->libelle}}</h5>
-                    <p class="card-text">{{$emplacement->tarif}}</p>
-                </div>
-            </div>
-        </div>
-        @endforeach
-    </div>
-    <div class="row">
-        <div class="col">
-            <label for="">DUREE</label>
-        </div>
-        @foreach(App\Models\Duree::all() as $duree)
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{$duree->libelle}}</h5>
-                    <p class="card-text">{{$duree->tarif}}</p>
-                </div>
-            </div>
-        </div>
-        @endforeach
-    </div>
-
 </div>
