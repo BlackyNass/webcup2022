@@ -7,7 +7,7 @@
             <div class="inner">
                 <h3 id="stat_dossiers_collectes">0</h3>
 
-                <p>NOMBRE DE CAPSULE COMMANDEES</p>
+                <p>NOMBRE CAPSULE COMMANDEES</p>
             </div>
             <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -22,7 +22,7 @@
             <div class="inner">
                 <h3 id="stat_dossiers_valides">0</h3>
 
-                <p>FACTURE IMPAYEES</p>
+                <p>NOMBRE FACTURE IMPAYEES</p>
             </div>
             <div class="icon">
                 <i class="ion ion-stats-bars"></i>
