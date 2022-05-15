@@ -25,10 +25,16 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-           
-                    <a class="navbar-brand " href="{{ route('admin.dashboard') }}" style="font-weight: bold; font-size: 1em">
+                @if (Auth::check())
+                    <a class="navbar-brand " href="{{  route('admin.dashboard') }}" style="font-weight: bold; font-size: 1em">
                         <img src="{{asset('css/logo-aeternitas-webcup2.jpg')}}" width="250" alt="Logo aeternitas ">
                     </a>
+                @else
+                <a class="navbar-brand " href="{{  url('/') }}" style="font-weight: bold; font-size: 1em">
+                    <img src="{{asset('css/logo-aeternitas-webcup2.jpg')}}" width="250" alt="Logo aeternitas ">
+                </a>
+                @endif
+                    
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>

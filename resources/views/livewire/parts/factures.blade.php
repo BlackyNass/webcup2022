@@ -12,7 +12,7 @@
 
       @forelse ($factures as $facture)
       <tr>
-        <td>{{$facture['created_at']}}</td>
+        <td>{{date('d/m/Y',$facture['created_at'])}}</td>
         <td>{{number_format($facture['total'], 2)}} € @if ($facture['acquite'])
           <a href="#" style="float: right" class="btn btn-success">Acquitée</a>
           @else
