@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 pl-lg-0 d-flex align-items-center align-items-lg-end">
-                    <img src="{{ asset('css/undraw_season_change_f99v.svg')}}" alt="about" class="img-fluid" width="600">
+                <canvas width="290" height="290" style="width: 290px; height: 290px;"></canvas>
                 </div>
             </div>
         </section>
@@ -96,4 +96,6 @@
         </section>
     </div>
 </main>
+
+
 @endsection

@@ -9,6 +9,7 @@
     <title>Aeternitas</title>
     <link rel="stylesheet" href="{{asset('theme/assets/vendors/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('theme/assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/point_sphere.css')}}">
     @livewireStyles
 </head>
 
@@ -20,11 +21,11 @@
                 <a class="navbar-brand " href="{{  route('admin.dashboard') }}" style="font-weight: bold; font-size: 1em">
                     <img src="{{asset('css/logo-aeternitas-webcup2.jpg')}}" width="250" alt="Logo aeternitas ">
                 </a>
-            @else
-            <a class="navbar-brand " href="{{  url('/') }}" style="font-weight: bold; font-size: 1em">
-                <img src="{{asset('css/logo-aeternitas-webcup2.jpg')}}" width="250" alt="Logo aeternitas ">
-            </a>
-            @endif
+                @else
+                <a class="navbar-brand " href="{{  url('/') }}" style="font-weight: bold; font-size: 1em">
+                    <img src="{{asset('css/logo-aeternitas-webcup2.jpg')}}" width="250" alt="Logo aeternitas ">
+                </a>
+                @endif
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -64,7 +65,7 @@
         <div class="container">
             <div class="row footer-content">
                 <div class="col-xl-6 col-lg-7 col-md-8">
-                    <h2 class="mb-0" style="color:#fff;">Une question ou une demande particulière ?  </h2>
+                    <h2 class="mb-0" style="color:#fff;">Une question ou une demande particulière ? </h2>
                 </div>
                 <div class="col-md-4 col-lg-5 col-xl-6 py-3 py-md-0 d-md-flex align-items-center justify-content-end">
                     <a href="{{route('contact')}}" class="btn  btn-lg" style="background-color: #ED156D; color:#fff">Contactez-nous
@@ -73,13 +74,13 @@
             </div>
             <div class="row footer-widget-area">
                 <div class="col-md-3">
-                   
+
                 </div>
                 <div class="col-md-3 mt-3 mt-md-0">
-                 
+
                 </div>
                 <div class="col-md-3 mt-3 mt-md-0">
-                    
+
                 </div>
                 <div class="col-md-3 mt-3 mt-md-0">
                     <p>
@@ -94,6 +95,10 @@
     <script src="{{asset('theme/assets/vendors/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('theme/assets/vendors/popper.js/popper.min.js')}}"></script>
     <script src="{{asset('theme/assets/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="{{asset('js/point_sphere.js')}}"></script>
     @livewireScripts
 </body>
 
