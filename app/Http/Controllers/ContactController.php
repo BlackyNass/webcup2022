@@ -26,7 +26,10 @@ class ContactController extends Controller
             $contact->numero = $request['phone'];
             $contact->message = $request['message'];
             $contact->save();
-            redirect('accueil');
+
+            return redirect()->route('accueil', [])->with([
+                'message' => 'Votre message a bien été transmis.'
+            ]);
         }
 
         return redirect('contact')
